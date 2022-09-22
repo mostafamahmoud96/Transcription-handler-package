@@ -1,0 +1,17 @@
+{
+    "name": "mostafamahmoud/transcript",
+    "description": "Package to handle the loading and processing of a transcripts file.",
+    "autoload": {
+        "psr-4": {
+            "Mostafamahmoud\\Transcript\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mostafamahmoud"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
