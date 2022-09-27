@@ -16,11 +16,9 @@ class Transcription
     }
     public function lines(): array
     {
-        $lines = [];
-        for ($i = 0; $i < count($this->lines); $i += 2) {
-            $results[] = new Line($this->lines[$i], $this->lines[$i + 1]);
-        }
-        return $results;
+        return array_map(function ($line) {
+            return new Line($line[0], $line[1]);
+        }, array_chunk($this->lines, 2));
     }
     public function htmlLines()
     {
